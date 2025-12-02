@@ -47,4 +47,11 @@ jobs:
 
       - name: Build
         working-directory: ./frontend
-        run: npm run build -- --configuration production
+        run: npm run build -- --configuration production --base-href=/ahmedhassan/
+
+      # ✅ STEP الجديد المهم
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./frontend/dist
