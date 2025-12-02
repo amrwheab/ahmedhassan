@@ -47,7 +47,7 @@ jobs:
 
       - name: Build
         working-directory: ./frontend
-        run: npm run build -- --configuration production ahmedhassan
+        run: npm run build -- --configuration production frontend
 
       # ✅ STEP الجديد المهم
       - name: Deploy to GitHub Pages
