@@ -6,7 +6,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/api/health", (req,res)=>{
-  res.json({status:'الزمالك قادم'});
+  res.json({status:'برشلونة قادم'});
 });
 
 app.listen(5000, ()=> console.log("API running"));
